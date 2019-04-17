@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    <title>Vending Machine Change Caculator TDD</title>
+    <!-- Load the Qunit CSS file from CDN - Require to display our tests attractively -->
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-1.18.0.css">
+    <!-- Pure CSS is a minimalist CSS file we have included t make things look nicer -->
+    <link rel="stylesheet" href="https:// yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  </head>
+  <body>
+    <div id='main' style='padding: 2em;'>
+      <h1>Vending Machine Change Calculator</h1>
+      <h2>Calculate the Change for a Given Price and Cash Received</h2>
+      <!-- <input type="text" id="price"> </input> -->
+    </div>
+
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+    <!-- Load the QUnit Library from the CDN - this is the important bit ... -->
+    <script src="https://code.jquery.com/qunit/qunit-1.18.0.js"></script>
+
+    <script>
+    var getChange = function (totalPayable, cashPaid) {
+      'use strict';
+
+      var change = [];
+
+      return change;
+    };
+    </script>
+
+    <script>
+      test('getChange(1,1) should equal [] - an empty array', function(assert) {
+        var result = getChange(1,1); // no change/coins just an emtpy array
+        var expected = [];
+        assert.deepEqual(result, expected);
+    }); // use deepEqual for arrays see: https://api.qunitjs.com/deepEqual/
+    </script>
+
+  </body>
+</html>
